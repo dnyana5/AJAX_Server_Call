@@ -29,11 +29,11 @@ function makeAJAXCall(methodType, url,callback, async = true, data = null) {
   }
  
 
- const getURL = "http://localhost:3000/employees/1";
+const getURL = "http://localhost:3000/employees/1";
 function getUserDetails(data) {
   console.log("Get User Data at: " + showTime() + " data: " + data)
 }
-makeAJAXCall("GET", getURL, getUserDetails,true);//method type,url going to get called, call back function
+makeAJAXCall("GET", getURL, getUserDetails,true);
 console.log("Made GET AJAX Call to Server at: "+showTime())
 
 
